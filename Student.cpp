@@ -4,7 +4,16 @@
 #include<cstdlib>
 
 using namespace std;
-
+/*
+Создать бинарный файл, компонентами которого является структура,
+содержащая следующие поля:
+- фамилия и инициалы студентов;
+- номер группы;
+- успеваемость (массив из трех дисциплин);
+- размер стипендии.
+Переписать бинарный файл так, чтобы для студентов у которых нет троек,
+размер стипендии должен быть увиличен на 30%.
+*/
 struct Student
 {
 	string name;
@@ -105,7 +114,7 @@ int main()
 		cout << "File created and all data writen" << endl;
 		Print(student, k);
 	link:
-		cout << "You want to increase grants for every student who doesn�t have triples? (1 - Yes or 2 - Exit)" << endl;
+		cout << "You want to increase grants for every student who doesn’t have triples? (1 - Yes or 2 - Exit)" << endl;
 		cin >> selection;
 		if (selection == 1)
 		{
